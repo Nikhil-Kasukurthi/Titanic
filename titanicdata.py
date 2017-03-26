@@ -165,6 +165,7 @@ g = sns.factorplot('Survived', col='Sex', hue='Pclass', data=titanic_data_cleane
  .set_xticklabels(["False", "True"])
  .set_titles('{col_name}')
  )
+sns.plt.show()
 
 titles = ['Men', 'Women']
 for ax, title in zip(g.axes.flat, titles):
